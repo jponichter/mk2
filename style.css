@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: PopLight;
+  src: url("../fonts/Poppins-Light.ttf");
+}
+
+@font-face {
+  font-family: PopMedium;
+  src: url("../fonts/Poppins-Medium.ttf");
+}
+
+body {
+  background: gray;
+  font: PopLight;
+  height: 2000px;
+}
+
+nav {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#DAD6D6));
+  background: linear-gradient(180deg, #FFFFFF 0%, #DAD6D6 100%);
+}
+
+nav .navbar-brand {
+  color: red;
+  font-size: 36px;
+}
+
+nav .navbar-light {
+  color: #242424;
+}
+
+nav #navbar-menu {
+  margin: auto;
+}
+
+nav .nav-link {
+  color: #242424;
+  font-size: 24px;
+}
+
+#carousel {
+  height: 100vh;
+  width: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+#front-page {
+  padding: 0;
+  margin: 0;
+}
+
+.carousel-inner {
+  height: 100vh;
+}
+/*# sourceMappingURL=style.css.map */
