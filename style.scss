@@ -1,53 +1,92 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
 @font-face {
-    font-family: PopLight;
-    src: url("../fonts/Poppins-Light.ttf");
-  }
-  
-  @font-face {
-    font-family: PopMedium;
-    src: url("../fonts/Poppins-Medium.ttf");
-  }
+  font-family: PopLight;
+  src: url("../fonts/Poppins-Light.ttf");
+}
+
+@font-face {
+  font-family: PopMedium;
+  src: url("../fonts/Poppins-Medium.ttf");
+}
 
 body {
-    background: gray;
-    font: PopLight;
-    height: 2000px;
+  font: PopMedium;
 }
-nav{
-    background: linear-gradient(180deg, #FFFFFF 0%, #DAD6D6 100%);
-    .navbar-brand{
-        color: red;
-        font-size: 36px;
-    }
-    .navbar-light{
-        color: rgb(36, 36, 36);
-    }
-    #navbar-menu{
-        margin: auto;
-    }
-    .nav-link{
-        color: rgb(36, 36, 36);
-        font-size: 24px;
+nav {
+  background: linear-gradient(180deg, #ffffff 0%, #dad6d6 100%);
+  .navbar-brand {
+    color: red;
+    font-size: 36px;
+  }
+  .navbar-light {
+    color: rgb(36, 36, 36);
+  }
+  #navbar-menu {
+    margin: auto;
+  }
+  .nav-link {
+    color: rgb(36, 36, 36);
+    font-size: 24px;
+  }
+}
+
+#carousel {
+  padding: 0;
+  margin: 0;
+}
+
+#front-page {
+  padding: 0;
+  margin: 0;
+}
+
+#fleet-page {
+  background-color: red;
+  min-height: 50vh;
+  padding: 50px 0 100px 0;
+  text-align: center;
+  h1{
+      color: #ffffff;
+      padding-bottom: 50px;
+  }
+  .card{
+      padding: 10px;
+      margin: auto;
+  }
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center;
+  background-size: cover;
+}
+
+#about-page{
+    background: #ffffff;
+    min-height: 50vh;
+    text-align: center;
+    padding: 30px;
+    font-size: 28px;
+    letter-spacing: 0.01em;
+    p{
+        padding: 20px;
     }
 }
 
-#carousel{
-    height: 100vh;
-    width: 100vh;
-    padding: 0;
-    margin: 0;
+#contact-page{
+    text-align: center;
+    padding: 50px;
+    margin: auto;
 }
 
-#front-page{
-    padding: 0;
-    margin: 0;
-}
-
-.carousel-inner{
-    height: 100vh;
+footer{
+    text-align: center;
+    background: rgb(68, 67, 67);
+    color: #ffffff;
+    padding: 10px;
 }

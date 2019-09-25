@@ -12,8 +12,8 @@
 </head>
 
 <body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">MK2</a>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#front-page">MK2</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu"
             aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -22,32 +22,112 @@
         <div class="collapse navbar-collapse align-self-end" id="navbar-menu">
             <ul class="navbar-nav my-0 my-lg-0 ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#about-page">O nas</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#fleet-page">Flota</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Disabled</a>
+                    <a class="nav-link" href="#contact-page">Kontakt</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div class="container" id="front-page">
-        <div id="carousel" class="carousel slide col-12" data-ride="carousel" data-interval="4000">
+    <div class="container-fluid" id="front-page">
+        <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="false">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/1.jpg" class="img-fluid" alt="...">
+                    <img src="img/1.jpg" class="img-fluid" alt="bus1">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/2.jpg" class="img-fluid" alt="...">
+                    <img src="img/2.jpg" class="img-fluid" alt="bus2">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/3.jpg" class="img-fluid" alt="...">
+                    <img src="img/3.jpg" class="img-fluid" alt="bus3">
                 </div>
             </div>
         </div>
     </div>
+    <div class="container-fluid" id="about-page">
+        <div class="row">
+            <div class="col">
+                <h1>O nas</h1>
+                <p>Oferujemy wynajem turystycznych busów i autokarów w przewozach krajowych i zagranicznych oraz
+                    podmiejskich autobusów na krótkich trasach po Warszawie. Posiadamy rozbudowaną flotę transportową,
+                    dzięki czemu możemy dopasować odpowiedni środek transportu dla każdej grupy pasażerów. Zatrudniamy
+                    doświadczonych kierowców z wysoką kulturą osobistą.</p>
+                <p>Oferujemy nie tylko wynajem autokarów, ale również wynajem małych busów turystycznych, mieszczących
+                    kilka osób oraz wielkopojemnych autobusów podmiejskich. W skład naszej floty wchodzą pojazdy, takich
+                    marek jak Mercedes, Man, Bova czy Renault i to właśnie dzięki nim jesteśmy w stanie profesjonalnie
+                    oraz kompleksowo obsłużyć różnego rodzaju wydarzenia - śluby, wycieczki, konferencje, pogrzeby, a
+                    także zapewnić codzienny transport pracowników itp. Dostosowujemy działania do zapotrzebowania i
+                    oczekiwań Klientów. Nasza propozycja skierowana jest do firm, instytucji oraz osób prywatnych.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="fleet-page">
+        <h1>Flota</h1>
+        <div class="row">
+
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the
+                            bulk of the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/7.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the
+                            bulk of the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="contact-page">
+        <h1>Kontakt</h1>
+        <p>email: text@example.com</p>
+        <p>Telefon: 691-487-883</p>
+    </div>
+    <footer>
+            <p>&copy; 2019 Jan Ponichter</p>       
+    </footer>
+
 
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
