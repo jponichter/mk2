@@ -33,11 +33,16 @@ nav .navbar-light {
 
 nav #navbar-menu {
   margin: auto;
+  padding-left: 50px;
 }
 
 nav .nav-link {
   color: #242424;
   font-size: 24px;
+}
+
+nav .nav-item {
+  padding: 0px 10px 0px 10px;
 }
 
 #carousel {
