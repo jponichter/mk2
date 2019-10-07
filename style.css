@@ -56,7 +56,7 @@ nav .nav-item {
 }
 
 #fleet-page {
-  background-color: red;
+  background-color: #e21c2a;
   min-height: 50vh;
   padding: 50px 0 100px 0;
   text-align: center;
@@ -96,6 +96,10 @@ nav .nav-item {
   text-align: center;
   padding: 50px;
   margin: auto;
+}
+
+#contact-page .btn-send {
+  background: #e21c2a;
 }
 
 footer {
