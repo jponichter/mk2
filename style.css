@@ -56,20 +56,18 @@ nav .nav-item {
 }
 
 #fleet-page {
-  background-color: #e21c2a;
-  min-height: 50vh;
-  padding: 50px 0 100px 0;
+  height: auto;
   text-align: center;
 }
 
-#fleet-page h1 {
-  color: #ffffff;
-  padding-bottom: 50px;
+#fleet-page .fleet-left {
+  background-color: #161515;
+  padding: 100px 20px 100px 20px;
 }
 
-#fleet-page .card {
-  padding: 10px;
-  margin: auto;
+#fleet-page .fleet-right {
+  background-color: #e21c2a;
+  padding: 100px 20px 100px 20px;
 }
 
 .carousel-item {

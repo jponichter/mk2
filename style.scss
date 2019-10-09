@@ -49,19 +49,19 @@ nav {
 }
 
 #fleet-page {
-  background-color: #e21c2a;
-  min-height: 50vh;
-  padding: 50px 0 100px 0;
+  height: auto;
   text-align: center;
-  h1{
-      color: #ffffff;
-      padding-bottom: 50px;
+  .fleet-left{
+    background-color: rgb(22, 21, 21);
+    padding: 100px 20px 100px 20px;
   }
-  .card{
-      padding: 10px;
-      margin: auto;
+  .fleet-right{
+    background-color: #e21c2a;
+    padding: 100px 20px 100px 20px;
   }
 }
+
+
 
 .carousel-item {
   height: 100vh;
