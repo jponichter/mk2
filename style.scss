@@ -18,9 +18,8 @@ body {
 }
 nav {
   background: linear-gradient(180deg, #ffffff 0%, #dad6d6 100%);
-  .navbar-brand {
-    color: red;
-    font-size: 36px;
+  svg{
+    margin-left: 10px;
   }
   .navbar-light {
     color: rgb(36, 36, 36);
@@ -48,21 +47,6 @@ nav {
   margin: 0;
 }
 
-#fleet-page {
-  height: auto;
-  text-align: center;
-  .fleet-left{
-    background-color: rgb(22, 21, 21);
-    padding: 100px 20px 100px 20px;
-  }
-  .fleet-right{
-    background-color: #e21c2a;
-    padding: 100px 20px 100px 20px;
-  }
-}
-
-
-
 .carousel-item {
   height: 100vh;
   min-height: 350px;
@@ -72,20 +56,40 @@ nav {
 
 #about-page{
     background: #ffffff;
-    min-height: 50vh;
     text-align: center;
-    padding: 30px;
-    font-size: 28px;
+    padding: 40px;   
     letter-spacing: 0.01em;
     p{
         padding: 20px;
+        font-size: 22px;
     }
+}
+
+#fleet-page {
+  height: auto;
+  text-align: center;
+  .fleet-left, .fleet-right{
+    padding: 10px 20px 20px 20px;
+    h2{
+      padding: 20px;
+      color: #ffffff;
+    }
+  }
+  .fleet-left{
+    background-color: rgb(22, 21, 21);
+  }
+  .fleet-right{
+    background-color: #e21c2a;   
+  }
 }
 
 #contact-page{
     text-align: center;
     padding: 50px;
     margin: auto;
+    .underline{
+      border-bottom: 1px solid #e21c2a;
+    }
     .btn-send{
       background: #e21c2a;
     }

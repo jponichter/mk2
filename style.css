@@ -22,9 +22,8 @@ nav {
   background: linear-gradient(180deg, #ffffff 0%, #dad6d6 100%);
 }
 
-nav .navbar-brand {
-  color: red;
-  font-size: 36px;
+nav svg {
+  margin-left: 10px;
 }
 
 nav .navbar-light {
@@ -55,21 +54,6 @@ nav .nav-item {
   margin: 0;
 }
 
-#fleet-page {
-  height: auto;
-  text-align: center;
-}
-
-#fleet-page .fleet-left {
-  background-color: #161515;
-  padding: 100px 20px 100px 20px;
-}
-
-#fleet-page .fleet-right {
-  background-color: #e21c2a;
-  padding: 100px 20px 100px 20px;
-}
-
 .carousel-item {
   height: 100vh;
   min-height: 350px;
@@ -79,21 +63,46 @@ nav .nav-item {
 
 #about-page {
   background: #ffffff;
-  min-height: 50vh;
   text-align: center;
-  padding: 30px;
-  font-size: 28px;
+  padding: 40px;
   letter-spacing: 0.01em;
 }
 
 #about-page p {
   padding: 20px;
+  font-size: 22px;
+}
+
+#fleet-page {
+  height: auto;
+  text-align: center;
+}
+
+#fleet-page .fleet-left, #fleet-page .fleet-right {
+  padding: 10px 20px 20px 20px;
+}
+
+#fleet-page .fleet-left h2, #fleet-page .fleet-right h2 {
+  padding: 20px;
+  color: #ffffff;
+}
+
+#fleet-page .fleet-left {
+  background-color: #161515;
+}
+
+#fleet-page .fleet-right {
+  background-color: #e21c2a;
 }
 
 #contact-page {
   text-align: center;
   padding: 50px;
   margin: auto;
+}
+
+#contact-page .underline {
+  border-bottom: 1px solid #e21c2a;
 }
 
 #contact-page .btn-send {
