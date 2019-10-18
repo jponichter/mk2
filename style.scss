@@ -19,14 +19,14 @@ body {
 nav {
   background: linear-gradient(180deg, #ffffff 0%, #dad6d6 100%);
   svg{
-    margin-left: 10px;
+    margin-left: 20px;
   }
   .navbar-light {
     color: rgb(36, 36, 36);
   }
   #navbar-menu {
     margin: auto;
-    padding-left: 50px; 
+    padding-right: 10px; 
   }
   .nav-link {
     color: rgb(36, 36, 36);
@@ -48,8 +48,7 @@ nav {
 }
 
 .carousel-item {
-  height: 100vh;
-  min-height: 350px;
+  max-height: 100vh;
   background: no-repeat center center;
   background-size: cover;
 }
@@ -57,7 +56,7 @@ nav {
 #about-page{
     background: #ffffff;
     text-align: center;
-    padding: 40px;   
+    padding: 30px;   
     letter-spacing: 0.01em;
     p{
         padding: 20px;
@@ -87,6 +86,9 @@ nav {
     text-align: center;
     padding: 50px;
     margin: auto;
+    #contact-form{
+      padding: 0px 50px 0px 50px;
+    }
     .underline{
       border-bottom: 1px solid #e21c2a;
     }
@@ -100,4 +102,34 @@ footer{
     background: rgb(68, 67, 67);
     color: #ffffff;
     padding: 10px;
+}
+
+
+@media screen and (max-width: 1024px){
+  nav{
+    min-height: 12vh;
+    svg{
+      margin-left: 0;
+      height: 50px;
+    }
+  }
+  .carousel-item{
+    padding-top: 12vh;
+  }
+}
+
+@media screen and (max-width: 768px){
+  #about-page{
+    // padding: 40px 0px 8px 0px;
+    p{
+      font-size: 18px;
+      padding: 10px;
+    }
+  }
+  #contact-page{
+    padding: 20px 30px 0px 30px;
+    #contact-form{
+      padding: 0;
+    }
+  }
 }
