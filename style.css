@@ -98,16 +98,22 @@ nav .nav-item {
 #fleet-page #coaches {
   position: absolute;
   right: -100%;
-  background: orange;
+  background: #e21c2a;
   width: 100%;
-  min-height: 400px;
   margin: 0;
   padding: 0;
-  margin: 0;
 }
 
 #fleet-page #coaches #btn-right-close {
   padding: 20px;
+}
+
+#fleet-page #coaches .card {
+  margin: 30px;
+}
+
+#fleet-page #coaches .card ul {
+  list-style-type: none;
 }
 
 #contact-page {

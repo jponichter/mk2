@@ -84,14 +84,18 @@ nav {
   #coaches{
     position: absolute;
     right: -100%;
-    background: orange;
+    background: #e21c2a;
     width: 100%;
-    min-height: 400px;
     margin: 0;
     padding: 0;
-    margin: 0;
     #btn-right-close{
       padding: 20px;
+    }
+    .card{
+      margin: 30px;
+      ul{
+        list-style-type: none;
+      }
     }
   }
 }
