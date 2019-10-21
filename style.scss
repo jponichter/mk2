@@ -15,6 +15,7 @@
 
 body {
   font: PopMedium;
+  overflow-x: hidden;
 }
 nav {
   background: linear-gradient(180deg, #ffffff 0%, #dad6d6 100%);
@@ -66,7 +67,7 @@ nav {
 
 #fleet-page {
   height: auto;
-  text-align: center;
+  text-align: center; 
   .fleet-left, .fleet-right{
     padding: 10px 20px 20px 20px;
     h2{
@@ -80,7 +81,22 @@ nav {
   .fleet-right{
     background-color: #e21c2a;   
   }
+  #coaches{
+    position: absolute;
+    right: -100%;
+    background: orange;
+    width: 100%;
+    min-height: 400px;
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    #btn-right-close{
+      padding: 20px;
+    }
+  }
 }
+
+
 
 #contact-page{
     text-align: center;

@@ -96,11 +96,11 @@
         </div>
     </div>
     <div class="container-fluid" id="fleet-page">
-        <div class="row">
+        <div class="row row-eq-height">
             <div class="col-sm-6 fleet-left">
                 <h2>Busy</h2>
                 <div class="view overlay zoom">
-                    <img src="img/flota2.JPG" class="img-fluid" alt="zoom">
+                    <img src="img/flota2.JPG" class="img-fluid photo" alt="zoom">
                     <div class="mask flex-center waves-effect waves-light">
                         <p class="white-text">Zoom effect sadadsdasdad</p>
                     </div>
@@ -108,16 +108,19 @@
 
             </div>
             <div class="col-sm-6 fleet-right">
-                <h2>Autokary</h2>
+                <h2 id="btn-right">Autokary</h2>
                 <div class="view overlay zoom">
-                    <img src="img/flota.JPG" class="img-fluid" alt="zoom">
+                    <img src="img/flota.JPG" class="img-fluid photo" alt="zoom">
                     <div class="mask flex-center waves-effect waves-light">
                         <p class="white-text">Zoom effect</p>
                     </div>
                 </div>
-
+            </div>
+            <div class="col-sm-12 h-100 d-inline-block" id="coaches">
+                <button class="btn btn-primary" id="btn-right-close">Zamknij</button>
             </div>
         </div>
+        
     </div>
     <!--Section: Contact v.2-->
     <section class="mb-4" id="contact-page">
@@ -237,6 +240,7 @@
     src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
+<script src="anime.min.js"></script>
 <script src="app.js"></script>
 
 </html>
