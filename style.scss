@@ -67,7 +67,8 @@ nav {
 
 #fleet-page {
   height: auto;
-  text-align: center; 
+  text-align: center;
+  overflow: hidden;
   .fleet-left, .fleet-right{
     padding: 10px 20px 20px 20px;
     h2{
@@ -89,7 +90,7 @@ nav {
     margin: 0;
     padding: 0;
     #btn-right-close{
-      padding: 20px;
+      padding-top: 16px;
     }
     .card{
       margin: 30px;

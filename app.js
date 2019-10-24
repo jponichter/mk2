@@ -1,10 +1,15 @@
-// const anime = require('anime');
 
 $("#btn-right").click(() => {
   // anime({
   //     targets: '#coaches',
   //     translateX: -screen.width
   // });
+
+  
+  let fleetHeight = $('#fleet-page').height();
+  console.log(fleetHeight);
+  $('#coaches').height(fleetHeight);
+
   let tl = anime.timeline({
     easing: "easeOutExpo",
     duration: 750
@@ -23,6 +28,7 @@ $("#btn-right").click(() => {
 });
 
 $("#btn-right-close").click(() => {
+
     let tl = anime.timeline({
         easing: "easeInExpo",
         duration: 750
