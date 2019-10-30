@@ -102,15 +102,12 @@ nav .nav-item {
   background: #e21c2a;
   width: 100%;
   margin: 0;
-  padding: 0;
-}
-
-#fleet-page #coaches #btn-right-close {
-  padding-top: 16px;
+  padding: 10px;
+  z-index: 2;
 }
 
 #fleet-page #coaches .card {
-  margin: 30px;
+  margin: 6px 5px 0px 5px;
 }
 
 #fleet-page #coaches .card ul {
@@ -139,7 +136,7 @@ footer {
   text-align: center;
   background: #444343;
   color: #ffffff;
-  padding: 10px;
+  padding: 14px 0 1px 0;
 }
 
 @media screen and (max-width: 1024px) {
@@ -152,6 +149,21 @@ footer {
   }
   .carousel-item {
     padding-top: 12vh;
+  }
+  #fleet-page #coaches {
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    z-index: 2;
+  }
+  #fleet-page #coaches .card-title {
+    font-size: 20px;
+  }
+  #fleet-page #coaches ul {
+    font-size: 14px;
   }
 }
 
