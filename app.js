@@ -4,26 +4,24 @@ $("#btn-right").click(() => {
   //     translateX: -screen.width
   // });
 
-  if (window.matchMedia("(min-width: 769px)").matches) {
+  let tl = anime.timeline({
+    easing: "easeOutExpo",
+    duration: 750
+  });
+
+  tl.add({
+    targets: [".photo", "#btn-right", "#btn-left"],
+    opacity: 0
+  }).add({
+    targets: "#coaches",
+    translateX: -document.body.clientWidth
+  });
+
+  if (window.matchMedia("(min-width: 1025px)").matches) {
     let fleetHeight = $("#fleet-page").height();
-    console.log(fleetHeight);
     $("#coaches").height(fleetHeight);
-
-    let tl = anime.timeline({
-      easing: "easeOutExpo",
-      duration: 750
-    });
-
-    tl.add({
-      targets: ".photo",
-      opacity: 0
-    }).add({
-      targets: "#coaches",
-      translateX: -document.body.clientWidth
-    });
-  }else{
-
   }
+  $("#coaches").show();
 });
 
 $("#btn-right-close").click(() => {
@@ -36,7 +34,7 @@ $("#btn-right-close").click(() => {
     targets: "#coaches",
     translateX: document.body.clientWidth
   }).add({
-    targets: ".photo",
+    targets: [".photo", "#btn-right", "#btn-left"],
     opacity: 1
   });
 });
@@ -55,4 +53,8 @@ $(document).ready(function () {
           'scrollTop': $target.offset().top - navHeight
       }, 900, 'swing');
   });
+});
+
+$("#coaches-1").click(() => {
+  $("#coaches-modal-1").modal('show');
 });

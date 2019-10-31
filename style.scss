@@ -19,7 +19,7 @@ body {
 }
 nav {
   background: linear-gradient(180deg, #ffffff 0%, #dad6d6 100%);
-  svg{
+  svg {
     margin-left: 20px;
   }
   .navbar-light {
@@ -27,62 +27,69 @@ nav {
   }
   #navbar-menu {
     margin: auto;
-    padding-right: 10px; 
+    padding-right: 10px;
   }
   .nav-link {
     color: rgb(36, 36, 36);
     font-size: 24px;
   }
-  .nav-item{
+  .nav-item {
     padding: 0px 10px 0px 10px;
   }
-}
-
-#carousel {
-  padding: 0;
-  margin: 0;
 }
 
 #front-page {
   padding: 0;
   margin: 0;
-}
-
-.carousel-item {
-  max-height: 100vh;
-  background: no-repeat center center;
-  background-size: cover;
-}
-
-#about-page{
-    background: #ffffff;
-    text-align: center;
-    padding: 30px;   
-    letter-spacing: 0.01em;
-    p{
-        padding: 20px;
-        font-size: 22px;
+  #carousel {
+    padding: 0;
+    margin: 0;
+    .carousel-item {
+      max-height: 100vh;
+      background: no-repeat center center;
+      background-size: cover;
     }
+  }
+}
+
+#about-page {
+  background: #ffffff;
+  text-align: center;
+  padding: 30px;
+  letter-spacing: 0.01em;
+  p {
+    padding: 20px;
+    font-size: 22px;
+  }
 }
 
 #fleet-page {
   height: auto;
   text-align: center;
   overflow: hidden;
-  .fleet-left, .fleet-right{
+  .fleet-left,
+  .fleet-right {
     padding: 10px 20px 20px 20px;
-    h2{
+    h2 {
       padding: 20px;
       color: #ffffff;
     }
   }
-  .fleet-left{
+  .fleet-left {
     background-color: rgb(22, 21, 21);
+    #btn-left,
+    #img-left {
+      cursor: pointer;
+    }
   }
-  .fleet-right{
-    background-color: #e21c2a;   
+  .fleet-right {
+    background-color: #e21c2a;
+    #btn-right,
+    #img-right {
+      cursor: pointer;
+    }
   }
-  #coaches{
+  #coaches {
     position: absolute;
     right: -100%;
     background: #e21c2a;
@@ -90,85 +97,92 @@ nav {
     margin: 0;
     padding: 10px;
     z-index: 2;
-    #btn-right-close{
-      // padding-top: 0px;
+    #btn-right-close {
+      padding: 10px;
     }
-    .card{
+    .card {
       margin: 6px 5px 0px 5px;
-      ul{
+      ul {
         list-style-type: none;
       }
     }
   }
+  
+
+  .modal-full .modal-content {
+    
+  }
 }
 
-
-
-#contact-page{
-    text-align: center;
-    padding: 50px;
-    margin: auto;
-    #contact-form{
-      padding: 0px 50px 0px 50px;
-    }
-    .underline{
-      border-bottom: 1px solid #e21c2a;
-    }
-    .btn-send{
-      background: #e21c2a;
-    }
+#contact-page {
+  text-align: center;
+  padding: 50px;
+  margin: auto;
+  #contact-form {
+    padding: 0px 50px 0px 50px;
+  }
+  .underline {
+    border-bottom: 1px solid #e21c2a;
+  }
+  .btn-send {
+    background: #e21c2a;
+  }
 }
 
-footer{
-    text-align: center;
-    background: rgb(68, 67, 67);
-    color: #ffffff;
-    padding: 14px 0 1px 0;
+footer {
+  text-align: center;
+  background: rgb(68, 67, 67);
+  color: #ffffff;
+  padding: 14px 0 1px 0;
 }
 
-
-@media screen and (max-width: 1024px){
-  nav{
+@media screen and (max-width: 1024px) {
+  nav {
     min-height: 12vh;
-    svg{
+    svg {
       margin-left: 0;
       height: 50px;
     }
   }
-  .carousel-item{
+  .carousel-item {
     padding-top: 12vh;
   }
-  #fleet-page{
-    #coaches{
+  #fleet-page {
+    #coaches {
+      display: none;
       overflow-x: hidden;
       position: fixed;
       top: 0;
-      left: 0;
-      width: 0;
-      height: 0;
+      right: -100%;
+      width: 100%;
+      height: 100%;
       z-index: 2;
-      .card-title{
+      padding-top: 12vh;
+      .card {
+        margin-bottom: 10px;
+      }
+      .card-title {
         font-size: 20px;
       }
-      ul{
+      ul {
         font-size: 14px;
       }
     }
   }
 }
 
-@media screen and (max-width: 768px){
-  #about-page{
+@media screen and (max-width: 768px) {
+  #about-page {
     // padding: 40px 0px 8px 0px;
-    p{
+    p {
       font-size: 18px;
       padding: 10px;
     }
   }
 
-  #contact-page{
+  #contact-page {
     padding: 20px 30px 0px 30px;
-    #contact-form{
+    #contact-form {
       padding: 0;
     }
   }
