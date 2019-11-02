@@ -538,9 +538,9 @@
                     <!--Grid row-->
                 </form>
                 <div class="text-center text-md-left pl-4">
-                    <a class="btn btn-send" onclick="document.getElementById('contact-form').submit();">Wyślij</a>
+                    <a class="btn btn-send" onclick="validateForm()">Wyślij</a>
                 </div>
-                <div class="status"></div>
+                <div id="status"></div>
             </div>
         </div>
     </section>

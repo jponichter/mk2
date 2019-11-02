@@ -185,6 +185,11 @@ nav .nav-item {
   background: #e21c2a;
 }
 
+#contact-page #status {
+  color: #e21c2a;
+  font-weight: bold;
+}
+
 footer {
   text-align: center;
   background: #444343;
