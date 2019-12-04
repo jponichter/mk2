@@ -8,18 +8,8 @@
   margin: 0;
 }
 
-@font-face {
-  font-family: PopLight;
-  src: url("../fonts/Poppins-Light.ttf");
-}
-
-@font-face {
-  font-family: PopMedium;
-  src: url("../fonts/Poppins-Medium.ttf");
-}
-
 body {
-  font: PopMedium;
+  font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
 
@@ -167,7 +157,8 @@ nav .nav-item {
   list-style-type: none;
 }
 
-#fleet-page .carousel-control-prev-icon, #fleet-page .carousel-control-next-icon {
+#fleet-page .carousel-control-prev-icon,
+#fleet-page .carousel-control-next-icon {
   height: 90px;
   width: 90px;
 }
@@ -199,7 +190,8 @@ nav .nav-item {
   font-weight: bold;
 }
 
-#contact-page #orders-page b, #contact-page #orders-page a {
+#contact-page #orders-page b,
+#contact-page #orders-page a {
   color: #e21c2a;
 }
 

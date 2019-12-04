@@ -6,8 +6,10 @@ function mk2_files() {
     wp_enqueue_script('bootstrap_js', '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js', array('jquery', 'popper_js'), '1.0', true);
     wp_enqueue_script('mdbootstrap_js', '//cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js', array('jquery', 'popper_js', 'bootstrap_js'), '1.0', true);
     wp_enqueue_script('anime_min_js', get_theme_file_uri('/js/anime.min.js'), NULL, '1.0', true);
-    wp_enqueue_script('app_js', get_theme_file_uri('/js/app.js'), array('jquery', 'popper_js', 'bootstrap_js', 'mdbootstrap_js', 'anime_min_js'), '1.0', true);
+    wp_enqueue_script('app_js', get_theme_file_uri('/js/app.babel.js'), array('jquery', 'popper_js', 'bootstrap_js', 'mdbootstrap_js', 'anime_min_js'), '1.0', true);
     wp_enqueue_script('recaptcha_js', '//www.google.com/recaptcha/api.js', NULL, '1.0', true);
+    wp_enqueue_style('normalize_css', get_stylesheet_uri('./normalize.css'));
+    wp_enqueue_style('poppins', '//fonts.googleapis.com/css?family=Poppins&display=swap');
     wp_enqueue_style('font_awesome_css', '//use.fontawesome.com/releases/v5.8.2/css/all.css');
     wp_enqueue_style('bootstrap_css', '//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
     wp_enqueue_style('mdbootstrap_css', '//cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css');

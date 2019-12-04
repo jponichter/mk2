@@ -559,8 +559,9 @@
                     <h3 class="h3-responsive font-weight-bold text-center my-4">Wycena</h3>
                     <ul>
                         <li>Aby otrzymać wycenę prosimy o kontakt telefoniczny pod numerami:
-                            <b><a href="tel:222154183"> (22) 215 41 83</a>, kom. 691-487-883</b> lub mailowy na adres <b><a
-                                    href="mailto:biuro@mk2.com.pl" target="_blank">biuro@mk2.com.pl</a></b>.</li>
+                            <b><a href="tel:222154183"> (22) 215 41 83</a>, <a href="tel:691487883">kom.
+                                    691-487-883</a></b> lub mailowy na adres <b><a href="mailto:biuro@mk2.com.pl"
+                                    target="_blank">biuro@mk2.com.pl</a></b>.</li>
                         <li>Wskazane jest przygotowanie informacji na temat:</li>
                         <li>przewidywanej ilości pasażerów</li>
                         <li>trasy przejazdu (miejsca podstawienia i miejsca docelowego)</li>
@@ -637,19 +638,20 @@
                     </div>
                 </div>
                 <!--Grid row-->
-                <<div class="form-group">
+                <div class="form-group">
                     <div class="g-recaptcha" data-sitekey="6Ld3c8EUAAAAACoJsx3GDBBlZnKoHoli9pL9H0uW"
                         data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback">
                     </div>
                     <input class="form-control d-none" data-recaptcha="true" name="recaptcha" required
                         data-error="Please complete the Captcha">
                     <div class="help-block with-errors"></div>
+                </div>
+            </form>
+            <div class="text-center text-md-left pl-4">
+                <a class="btn btn-send" onclick="validateForm()">Wyślij</a>
+            </div>
+            <div id="status"></div>
         </div>
-        </form>
-        <div class="text-center text-md-left pl-4">
-            <a class="btn btn-send" onclick="validateForm()">Wyślij</a>
-        </div>
-        <div id="status"></div>
     </div>
 
 </section>

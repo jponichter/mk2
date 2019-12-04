@@ -8,18 +8,8 @@
   margin: 0;
 }
 
-@font-face {
-  font-family: PopLight;
-  src: url("../fonts/Poppins-Light.ttf");
-}
-
-@font-face {
-  font-family: PopMedium;
-  src: url("../fonts/Poppins-Medium.ttf");
-}
-
 body {
-  font: PopMedium;
+  font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
 nav {
@@ -108,7 +98,7 @@ nav {
     }
     .card {
       margin: 6px 5px 0px 5px;
-      .mask{
+      .mask {
         cursor: pointer;
       }
       ul {
@@ -130,7 +120,7 @@ nav {
     }
     .card {
       margin: 6px 5px 0px 5px;
-      .mask{
+      .mask {
         cursor: pointer;
       }
       ul {
@@ -138,7 +128,8 @@ nav {
       }
     }
   }
-  .carousel-control-prev-icon, .carousel-control-next-icon{
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
     height: 90px;
     width: 90px;
   }
@@ -148,7 +139,7 @@ nav {
   text-align: center;
   padding: 50px;
   margin: auto;
-  a[href^="mailto:"], a[href^="https://goo.gl"], a[href^="tel"]{
+  a[href^="mailto:"], a[href^="https://goo.gl"], a[href^="tel"] {
     color: #161515;
   }
   #contact-form {
@@ -160,15 +151,16 @@ nav {
   .btn-send {
     background: #e21c2a;
   }
-  #status{
+  #status {
     color: #e21c2a;
     font-weight: bold;
   }
-  #orders-page{
-    b, a{
+  #orders-page {
+    b,
+    a {
       color: #e21c2a;
     }
-    ul{
+    ul {
       list-style-type: none;
     }
   }
@@ -189,12 +181,12 @@ footer {
       height: 50px;
     }
   }
-  #front-page{
+  #front-page {
     .carousel-item {
       padding-top: 12vh;
     }
   }
-  
+
   #fleet-page {
     #coaches {
       display: none;
